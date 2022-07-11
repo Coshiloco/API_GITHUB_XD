@@ -29,10 +29,15 @@
         "prettier": "2.7.1"
     },
     "imports": {
-        "#Lib/*": "./src/lib/*"
+        "#Lib/*": "./src/lib/*",
+        "#Config/*": "./src/config/*"
     },
     "lint-staged": {
         "*.js": "eslint --fix",
         "*.{js,md}": "prettier --write"
+    },
+    "dependencies": {
+        "dotenv": "^16.0.1",
+        "octokit": "^2.0.3"
     }
 }
